@@ -1,0 +1,11 @@
+version: :'3.8'
+services:
+  postgres:
+   image: postgres:14-alpine
+   container_name: webz_postgres
+   environment:
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
+    POSTGRES_DB: webzdb
+   ports:
+     - 5434:5432
